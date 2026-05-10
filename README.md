@@ -1,17 +1,17 @@
-# AE — import folder → Project panel (same structure)
+# AE — 디스크 폴더를 프로젝트 패널에 그대로 가져오기
 
-**v1.0** · [한국어](README.ko.md) · [日本語](README.ja.md)
+**v1.0** · [English](README.en.md) · [日本語](README.ja.md)
 
-Pick one folder on disk → After Effects rebuilds that folder tree in the **Project** panel and imports files into it.
+폴더 하나 고르면 **프로젝트 패널**에 같은 트리가 만들어지고 안쪽 파일이 들어갑니다.
 
-**Only tested on macOS** (AE 2026). Not verified on Windows.
+**macOS만 테스트** (AE 2026). Windows 미확인.
 
-**Install:** drop `marie-import-folder-structure.jsx` into e.g.  
-`/Applications/Adobe After Effects 2026/Scripts/`  
-Turn on **Preferences → Scripting & Expressions → Allow Scripts to Write Files and Access Network**.
+**설치:** `marie-import-folder-structure.jsx` 를 예)  
+`/Applications/Adobe After Effects 2026/Scripts/` 에 넣기  
+환경설정 → 스크립팅에서 **파일 쓰기·네트워크 허용** 켜기.
 
-**Run:** **File → Scripts → marie-import-folder-structure**
+**실행:** **파일 → 스크립트 → marie-import-folder-structure**
 
-Image sequences may not behave like AE’s built-in folder import; use the first frame if needed. Unicode folder names on macOS are handled when `.name` breaks.
+시퀀스는 내장 가져오기와 다를 수 있음. 한글 폴더명 깨짐은 경로 기준으로 보정.
 
-MIT — see [`LICENSE`](LICENSE).
+MIT — [`LICENSE`](LICENSE).
